@@ -1,0 +1,8 @@
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Models.deps.json
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Models.dll
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Models.pdb
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.csprojAssemblyReference.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.AssemblyInfoInputs.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.AssemblyInfo.cs
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.dll
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.pdb
