@@ -1,0 +1,12 @@
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.deps.json
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.dll
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\bin\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.pdb
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.csprojAssemblyReference.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.AssemblyInfoInputs.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.AssemblyInfo.cs
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.dll
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.pdb
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\bin\Debug\netcoreapp3.1\LaPescaEnLinea.ViewModels.dll
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\bin\Debug\netcoreapp3.1\LaPescaEnLinea.ViewModels.pdb
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.csproj.CoreCompileInputs.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Tools\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Tools.csproj.CopyComplete

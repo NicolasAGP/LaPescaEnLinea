@@ -2,12 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LaPescaEnLinea.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Globalization;
+using LaPescaEnLinea.ViewModels;
+using LaPescaEnLinea.Tools.Services;
 
 namespace LaPescaEnLinea.Web
 {
@@ -24,7 +31,14 @@ namespace LaPescaEnLinea.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-        }
+            services.AddResponseCompression();
+            services.AddResponseCaching();
+            string conn = Configuration.GetConnectionString("connlpl");
+            services.AddDbContext<DataContextLPL>(options => options.UseSqlServer(conn));
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            services.Configure<EmailSettings>(Configuration.GetSection("EmailSetting"));
+            services.AddSingleton<IEmailSender, EmailSender>();
+                    }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -39,12 +53,24 @@ namespace LaPescaEnLinea.Web
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            var cultureInfo = new CultureInfo("es-Es");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+
             app.UseHttpsRedirection();
+            app.UseResponseCompression();
+            app.UseResponseCaching();
+
+
+
             app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

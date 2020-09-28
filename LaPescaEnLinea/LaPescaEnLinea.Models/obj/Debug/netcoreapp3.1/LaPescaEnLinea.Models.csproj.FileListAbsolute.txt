@@ -6,3 +6,4 @@ C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Mo
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.AssemblyInfo.cs
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.dll
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.pdb
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Models\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Models.csproj.CoreCompileInputs.cache

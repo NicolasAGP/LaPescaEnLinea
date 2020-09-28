@@ -84,7 +84,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\nicolas.gonzalez\\Desktop\\Nueva carpeta\\LaPescaEnLinea\\LaPescaEnLinea.ViewModels\\LaPescaEnLinea.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\nicolas.gonzalez\\Desktop\\Nueva carpeta\\LaPescaEnLinea\\LaPescaEnLinea.ViewModels\\LaPescaEnLinea.ViewModels.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -95,6 +99,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -209,6 +219,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
