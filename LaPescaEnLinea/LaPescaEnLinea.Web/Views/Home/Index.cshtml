@@ -1,8 +1,105 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Bienvenidos a GHH";
 }
+<section class="banner" id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 banner-center">
+                <div class="banner-text">
+                    <h3>Wena </h3>
+                    <h2>GHH</h2>
+                </div>
+            </div>
+        </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    </div>
+</section>
+
+<section id="reservation-form" class="reservation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="reserve">
+                    <div class="reservation-tabs">
+
+                        <ul class="nav nav-tabs search-opt">
+                            <li><a href="#hotels-tab" class="active" data-toggle="tab">Buscar hotel</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-content">
+                        <form id="hotels-tab" class="tab-pane form-inline reservation-hotel active" method="post" name="reservationform">
+                            <div class="row">
+                                <div class="col-md-3 step-where">
+                                    <div class="form-group">
+                                        <div class="content-checkin-data">
+                                            <label>
+                                                <i class="flaticon-door"></i>
+                                                Check in
+                                            </label>
+                                            <input type="text" id="datepicker" data-provide="datepicker" required class="field-input calendar-input" placeholder="dd/mm/yyyy">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3 step-where">
+                                    <div class="form-group">
+                                        <div class="content-checkin-data">
+                                            <label>
+                                                <i class="flaticon-door-1"></i>
+                                                Check out
+                                            </label>
+                                            <input type="text" id="datepicker1" data-provide="datepicker" required class="field-input calendar-input" placeholder="dd/mm/yyyy">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-2 step-where">
+                                    <div class="form-group">
+                                        <div class="content-checkin-data">
+                                            <label>
+                                                <i class="flaticon-tourist"></i>
+                                                Adultos
+                                            </label>
+                                            <input type="number" id="traveller" class="field-input" required value="1" min="1" onfocus="if(this.value  == 'Adultos') { this.value = ''; } " onblur="if(this.value == '') { this.value = 'Adultos'; } " />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 step-where">
+                                    <div class="form-group">
+                                        <div class="content-checkin-data">
+                                            <label>
+                                                <i class="flaticon-tourist"></i>
+                                                Niños
+                                            </label>
+                                            <input type="number" id="destination" class="field-input" value="Cratia, Chile, Peru" onfocus="" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <button class="banner-btn">Buscar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <!--********************* Flight reservation ********************-->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
