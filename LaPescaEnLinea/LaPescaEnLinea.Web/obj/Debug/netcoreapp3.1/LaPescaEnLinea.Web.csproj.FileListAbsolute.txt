@@ -80,3 +80,5 @@ C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.We
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Web\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Web.csproj.CoreCompileInputs.cache
 C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Web\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Web\obj\Debug\netcoreapp3.1\LaPescaEnLinea.Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nicolas.gonzalez\Desktop\Nueva carpeta\LaPescaEnLinea\LaPescaEnLinea.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\Index.cshtml.g.cs

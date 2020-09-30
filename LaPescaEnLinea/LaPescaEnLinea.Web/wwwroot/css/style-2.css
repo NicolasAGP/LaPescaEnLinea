@@ -1565,7 +1565,7 @@ p {
 .contact {
     background: url(../images/footer-bg-image.png) no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    
     background-position: center center;
     padding: 60px 0 25px 0;
     position: relative;

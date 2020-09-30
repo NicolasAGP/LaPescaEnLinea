@@ -3,7 +3,6 @@ $(".btnAjaxAdd").on('click', function (e) {
     e.preventDefault();
     var botonActual = $(this);
     $(botonActual).attr('disabled', true);
-    $(botonActual).append("<img id='imgEnviandoAjax' src='" + urlLoading + "' style='margin-left: 10px;' />");
     var idFormulario = $(botonActual).data("formulario");
     var formAjaxAdd = $(idFormulario);
     var validAjaxAdd = formAjaxAdd.validate({
@@ -29,13 +28,10 @@ $(".btnAjaxAdd").on('click', function (e) {
     formAjaxAdd.ajaxSubmit({
         success: function (response) {
             if (response.isSuccess == true) {
-                if (response.url != "" && response.url != null) {
+                if (response.url != "") {
                     window.location.href = response.url;
                 } else {
-                    if (response.funcion == "cargacomentario") {
-                        $(response.divTabla).append(response.html);
-                    }
-                    Swal.fire({
+                      Swal.fire({
                         icon: 'success',
                         title: 'Felicidades...',
                         text: response.message
@@ -48,7 +44,6 @@ $(".btnAjaxAdd").on('click', function (e) {
                     icon: "error"
                 });
             }
-            $("#imgEnviandoAjax").remove();
             $(botonActual).attr('disabled', false);
         },
         error: function (request, status, error) {
@@ -57,7 +52,6 @@ $(".btnAjaxAdd").on('click', function (e) {
                 title: 'Oops...',
                 text: "Error al conectarse al servidor"
             });
-            $("#imgEnviandoAjax").remove();
             $(botonActual).attr('disabled', false);
         }
     });

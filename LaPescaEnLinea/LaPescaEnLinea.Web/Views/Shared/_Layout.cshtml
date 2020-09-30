@@ -52,12 +52,12 @@
                             <div class="header_top custom_nav right_info text-right">
 
                                 @* <ul>
-                                <li class="support"><a href="#">Ayuda</a></li>
-                                <li class="login">
-                                   <a href="#">Registro / Acceso</a>
-                                       </li>
-                                      </li>
-                                  </ul>*@
+                                    <li class="support"><a href="#">Ayuda</a></li>
+                                    <li class="login">
+                                       <a href="#">Registro / Acceso</a>
+                                           </li>
+                                          </li>
+                                      </ul>*@
                             </div>
 
                         </div>
@@ -78,6 +78,8 @@
                                             <li class="nav-item"><a class="nav-link" href="#recomended">Activides</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#popular">Blog</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                                            <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal">Registro/Acceso</a></li>
+
 
                                         </ul>
                                     </div>
@@ -120,16 +122,230 @@
     @RenderBody()
 
 
-
-
-
-
-    <footer class="border-top footer text-muted">
+    <footer id="contact" class="contact">
         <div class="container">
-            &copy; 2020 - LaPescaEnLinea.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row contact-part">
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="footer-add">
+
+                        <img src="" alt="" class="img-fluid">
+                        <div class="row footer-ad-txt">
+                            <div class="col-lg-4 col-md-4 col-5">
+                                <h3>Dirección :</h3>
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-7">
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row footer-ad-txt">
+                            <div class="col-4">
+                                <h3>Teléfono :</h3>
+                            </div>
+                            <div class="col-8">
+                                <ul>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row footer-ad-txt">
+                            <div class="col-4">
+                                <h3>Website	:</h3>
+                            </div>
+                            <div class="col-8">
+                                <ul>
+                                    <li></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                    <div class="con-inner">
+                        <h2>Help & Support</h2>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Cookie policy</a></li>
+                            <li><a href="~/Post/5">Terms of use</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-4">
+                    <div class="con-inner">
+                        <h2>Important Search</h2>
+                        <ul>
+                            <li><a href="#">Countries </a></li>
+                            <li><a href="#">Cities</a></li>
+                            <li><a href="#">Districts</a></li>
+                            <li><a href="#">Airports</a></li>
+                            <li><a href="#">Hotels</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-4">
+                    <div class="con-inner">
+                        <h2>Siguenos en</h2>
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i>Twitter</a></li>
+                            <li><a href=""><i class="fab fa-tripadvisor"></i>tripadvisor</a></li>
+                            <li><a href=""><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer">
+                        <p>Copyright © 2020. All rights reserved by Estrada Web Group</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-        <script src="~/js/jquery-3.2.1.min.js"></script>
+
+    <div class="modal" tabindex="-1" role="dialog" id="loginModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login-image">
+                        <img src="~/images/header-logo-2.png" alt="" class="img-fluid" />
+                    </div>
+
+                    <form id="formLogin" action="~/Account/Login" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading color" style="text-align:center">
+                                    <h2 style="text-transform: uppercase; font-size: 20px;"> Hola, Bienvenido a la pesca en linea</h2>
+                                    <img src="~/images/header-border.png" alt="" class="img-fluid" />
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtEmail" class="text-gris">Correo electronico</label>
+                                    <input type="email" class="form-control" id="txtEmail" placeholder="Captura tu correo electronico">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtPassword" class="text-gris">Contraseña</label>
+                                    <input type="password" class="form-control" id="txtPassword" placeholder="Captura tu contraseña">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="chkRemember">
+                                            <label class="form-check-label text-gris" for="chkRemember">Recordar mi cuenta</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="text-azul">Olvidaste tu contraseña</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-12" style="text-align:center">
+
+                                <button type="submit" class="btn btn-primary button-form btnAjaxAdd" data-formulario="#formLogin">Entrar a Ghh</button>
+                            </div>
+
+                            <div class="col-lg-12" style="text-align:center; padding: 30px 0 0 0;">
+                                <div class="form-group">
+                                    <label class="text-azul" style="cursor:pointer;" id="linkRegistrate">Reistrate aquí</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                    <form id="formRecupera" action="~/Account/RecuperarPass" method="post" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading color" style="text-align:center">
+                                    <h2 style="font-size: 20px;text-transform:uppercase">Recuperar contraseña de La Pesca en Línea</h2>
+                                    <img src="/images/header-border.png" alt="shap" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtEmail" class="text-gris">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="txtEmail" name="Email" required placeholder="Camptura tu correo electrónico">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="text-align:center;">
+                                <button type="submit" class="btn btn-primary button-form btnAjaxAdd" data-formulario="#formRecupera">Recuperar contraseña</button>
+                            </div>
+                            <div class="col-lg-12" style="text-align: center;padding: 30px 0 0 0;">
+                                <div class="form-group">
+                                    <label class="text-azul" style="cursor:pointer;" id="linkRecuperar">Entrar a la Pesca en Línea</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <form id="formRegister" action="~/Account/Register" method="post" style="display:none;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="heading color" style="text-align:center">
+                                    <h2 style="font-size: 20px;text-transform:uppercase">Registro a La Pesca en Línea</h2>
+                                    <img src="/images/header-border.png" alt="shap" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtName" class="text-gris">Nombre</label>
+                                    <input type="text" class="form-control" id="txtName" name="Nombre" required placeholder="Camptura tu nombre">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtEmail" class="text-gris">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="txtEmail" name="Email" required placeholder="Camptura tu correo electrónico">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="txtPassword" class="text-gris">Contraseña</label>
+                                    <input type="password" class="form-control" id="txtPassword" name="Password" required placeholder="Captura tu contraseña">
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="text-align:center;">
+                                <button type="submit" class="btn btn-primary button-form btnAjaxAdd" data-formulario="#formRegister">Registrarme en la Pesca en Línea</button>
+                            </div>
+                            <div class="col-lg-12" style="text-align: center;padding: 30px 0 0 0;">
+                                <div class="form-group">
+                                    <label class="text-azul" style="cursor:pointer;" id="linkEntrar">Entrar a la Pesca en Línea</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="~/js/jquery-3.2.1.min.js"></script>
     <script src="~/js/jquery-migrate-3.0.0.min.js"></script>
     <script src="~/js/sweetalert2.all.min.js"></script>
     <script src="~/js/jquery.form.js"></script>
@@ -158,5 +374,29 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
+
+
+    <script>
+
+        $("#linkRegistrate").click(function () {
+            $("#formLogin").hide();
+            $("#formRegister").show();
+
+        })
+        $("#linkEntrar").click(function () {
+            $("#formLogin").show();
+            $("#formRegister").hide();
+        })
+        $("#linkRecuperar").click(function () {
+            $("#formRecupera").hide();
+            $("#formLogin").show();
+        })
+
+        $("#linkVamosRecuperar").click(function () {
+            $("#formRecupera").show();
+            $("#formLogin").hide();
+        })
+
+    </script>
 </body>
 </html>
