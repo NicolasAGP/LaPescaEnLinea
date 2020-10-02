@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using LaPescaEnLinea.Web.Models;
 using LaPescaEnLinea.Models;
-using LaPescaEnLinea.Tools.Services;
 
 namespace LaPescaEnLinea.Web.Controllers
 {
@@ -15,13 +14,11 @@ namespace LaPescaEnLinea.Web.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly DataContextLPL _dbContext1;
-        private readonly IEmailSender _emailSender;
 
-        public HomeController(ILogger<HomeController> logger, DataContextLPL dataContext1, IEmailSender emailSender)
+        public HomeController(ILogger<HomeController> logger, DataContextLPL dataContext1)
         {
             _logger = logger;
             _dbContext1 = dataContext1;
-            _emailSender = emailSender;
         }
 
         public IActionResult Index()

@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using LaPescaEnLinea.Models;
 using LaPescaEnLinea.Tools;
-using LaPescaEnLinea.Tools.Services;
 using LaPescaEnLinea.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -21,13 +20,11 @@ namespace LaPescaEnLinea.Web.Controllers
     public class AccountController : Controller
     {
         private readonly ILogger _logger;
-        private readonly IEmailSender _emailSender;
         private readonly DataContextLPL _dbContext;
 
-        public AccountController(ILogger<AccountController> logger, IEmailSender emailSender, DataContextLPL dbContext)
+        public AccountController(ILogger<AccountController> logger,  DataContextLPL dbContext)
         {
             _logger = logger;
-            _emailSender = emailSender;
             _dbContext = dbContext;
         }
 
@@ -81,7 +78,7 @@ namespace LaPescaEnLinea.Web.Controllers
                 }
                 catch (Exception ex)
                 {
-                    await _emailSender.SendEmailAsync("ti@ghh.cl", "Error La Pesca en Línea ", ex.Message);
+                   
                 }
 
 
@@ -138,8 +135,6 @@ namespace LaPescaEnLinea.Web.Controllers
                         response.Close();
                         readStream.Close();
                     }
-                    await _emailSender.SendEmailAsync(model.Email, "Bienvenido a La Pesca en Línea ", strMensaje);
-                    await _emailSender.SendEmailAsync("nicolas.gonzalez.alexi@gmail.com", "Wena", strMensaje);
                     return new JsonResult(new Response { IsSuccess = true, Message = "Se creo el usuario correctamente, ya puede entrar a la Pesca en Línea", Url = "" });
                 }
             }

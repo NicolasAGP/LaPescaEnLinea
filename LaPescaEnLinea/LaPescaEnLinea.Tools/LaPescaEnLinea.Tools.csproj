@@ -13,4 +13,8 @@
     <ProjectReference Include="..\LaPescaEnLinea.ViewModels\LaPescaEnLinea.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
