@@ -44,7 +44,7 @@ namespace LaPescaEnLinea.Web.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> Login(Usuario model, string ReturnUrl = "ola")
+        public async Task<IActionResult> Login(Usuario model, string ReturnUrl = null)
         {
             ViewData["ReturnUrl"] = ReturnUrl;
             if (ModelState.IsValid)

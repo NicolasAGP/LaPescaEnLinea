@@ -12,7 +12,7 @@ namespace LaPescaEnLinea.Tools
         {
             if (!urlHelper.IsLocalUrl(localUrl))
             {
-                return urlHelper.Content("~/Panel/");
+                return urlHelper.Content("~/Admin/");
             }
 
             return localUrl;
